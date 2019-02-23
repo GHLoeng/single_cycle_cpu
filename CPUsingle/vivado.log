@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Jul 24 15:36:46 2018
+# Process ID: 18608
+# Current directory: G:/Vivado/CPUsingle
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16548 G:\Vivado\CPUsingle\CPU one cycle.xpr
+# Log file: G:/Vivado/CPUsingle/vivado.log
+# Journal file: G:/Vivado/CPUsingle\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {G:/Vivado/CPUsingle/CPU one cycle.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx2015.4/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 769.371 ; gain = 153.453
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Tue Jul 24 15:41:42 2018] Launched synth_1...
+Run output will be captured here: G:/Vivado/CPUsingle/CPU one cycle.runs/synth_1/runme.log
+[Tue Jul 24 15:41:44 2018] Launched impl_1...
+Run output will be captured here: G:/Vivado/CPUsingle/CPU one cycle.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 777.824 ; gain = 4.543
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jul 24 15:57:06 2018] Launched impl_1...
+Run output will be captured here: G:/Vivado/CPUsingle/CPU one cycle.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Jul 24 15:58:38 2018] Launched impl_1...
+Run output will be captured here: G:/Vivado/CPUsingle/CPU one cycle.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 24 16:21:00 2018...
